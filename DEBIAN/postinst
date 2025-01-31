@@ -1,0 +1,20 @@
+#!/bin/sh
+echo "*****************************************"
+echo "*              WireGuard VPN            *"
+echo "*           Written by Madhouse         *"
+echo "*****************************************"
+echo ""
+sleep 1
+echo "*****************************************"
+echo "*         WireGuard VPN Installed       *"
+echo "*****************************************"
+echo ""
+sleep 1
+echo "*****************************************"
+echo "*         Please restart the Gui        *"
+echo "*****************************************"
+echo ""
+sleep 1
+chmod 755 /usr/lib/enigma2/python/Plugins/Extensions/Wireguard/*.so 
+rm -r /var/volatile/tmp/*.ipk > /dev/null 2>&1
+exit 0

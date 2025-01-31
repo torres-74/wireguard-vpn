@@ -1,0 +1,11 @@
+Package: enigma2-plugin-extensions-wireguard-vpn
+Version: 14.7
+Section: enigma2
+Priority: optional
+Architecture: all
+Maintainer: madhouse
+Description: Protect your device with Wireguard
+Depends: 
+Source: https://github.com/m4dhouse
+OE: Enigma2 Plugin
+License:

@@ -1,0 +1,19 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides: kernel
+# Default-Start: 2345
+# Default-Stop: 016
+# Short-Description: disable ipv6
+# Description: disable ipv6
+### END INIT INFO
+
+case "$1" in
+start)
+ echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
+ ;;
+stop)
+ echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6
+ ;;
+esac
+exit 0
+

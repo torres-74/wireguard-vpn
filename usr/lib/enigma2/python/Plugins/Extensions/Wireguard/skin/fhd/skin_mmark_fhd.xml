@@ -1,0 +1,327 @@
+<skin>
+	<screen name="WireguardConfig" position="0,0" size="1920,1080" backgroundColor="#ff111111" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="380,7" size="1290,110" font="Wireguard;102" foregroundColor="#007fcfff" backgroundColor="#000000" transparent="1" zPosition="5"/>
+    <eLabel position="230,120" size="1450,3" backgroundColor="#303030" zPosition="4"/>
+    <ePixmap position="0,0" size="1700,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/main2.png" transparent="1" zPosition="-2"/>
+    <ePixmap position="1700,0" size="480,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/pC.png" transparent="1" zPosition="-1"/>
+    <eLabel position="230,960" size="1450,3" backgroundColor="#303030" zPosition="4"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_red,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_blue,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_green,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_yellow,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/key_menu.png" position="1600,985" size="80,35" transparent="1" alphatest="blend" scale="1" zPosition="10"/>
+	  <widget name="logo_wireguard" position="230,30" size="420,75" alphatest="blend" transparent="1" zPosition="1"/>
+    <widget name="description" position="230,140" size="1330,100" halign="center" valign="center" backgroundColor="#202020" transparent="0" foregroundColor="#00f9c731" font="Wireguard;28" />
+    <ePixmap position="1580,140" size="100,100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/icons/wireguard_logo.png" alphatest="blend" transparent="1" zPosition="1" scale="1" />
+    <eLabel position="230,250" size="1450,5" backgroundColor="#404040" zPosition="1"/>
+    <widget name="config" position="230,260" size="1450,675" font="Wireguard;28" itemHeight="45" textOffset="65,2" scrollbarMode="showOnDemand" backgroundColorSelected="#001b3c85" foregroundColorSelected="#49bbff" backgroundColor="#20000000" foregroundColor="#ffffff" transparent="1"/>
+    <eLabel text="Plugin Version" position="1425,40" size="250,40" font="Wireguard;30" backgroundColor="#000000" foregroundColor="#606060" halign="right" transparent="1" zPosition="1"/>
+    <widget name="Version" position="1425,75" size="250,40" backgroundColor="#000000" foregroundColor="#00f9c731" font="Wireguard;30" halign="right" zPosition="2" transparent="1"/>
+    <widget name="HelpWindow" position="230,700" size="1,1" transparent="1" />
+	</screen>
+
+	<screen name="WireguardScreenDns" position="0,0" size="1920,1080" backgroundColor="#ff111111" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="380,7" size="1090,110" font="Wireguard;102" foregroundColor="#007fcfff" backgroundColor="#000000" transparent="1" zPosition="99"/>
+    <eLabel position="230,120" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <ePixmap position="0,0" size="1500,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/main2.png" transparent="1" zPosition="-2"/>
+    <ePixmap position="1500,0" size="420,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/pC.png" transparent="1" zPosition="-1"/>
+    <eLabel position="230,960" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_red,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_blue,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_green,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_yellow,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+	  <widget name="logo_wireguard" position="230,30" size="420,75" alphatest="blend" transparent="1" zPosition="1"/>
+    <eLabel text="Plugin Version" position="1225,40" size="250,40" font="Wireguard;30" backgroundColor="#000000" foregroundColor="#606060" halign="right" transparent="1" zPosition="1"/>
+    <widget name="Version" position="1225,75" size="250,40" backgroundColor="#000000" foregroundColor="#00f9c731" font="Wireguard;30" halign="right" zPosition="2" transparent="1"/>
+    <widget name="list" position="230,140" size="1250,675" font="Wireguard;32" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000000" foregroundColorSelected="#ffffff" backgroundColorSelected="#178a9e"
+      scrollbarMode="showOnDemand" scrollbarForegroundColor="#178a9e" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="1"/>
+    <widget name="CheckKey" position="230,140" size="1250,720" backgroundColor="#000000" foregroundColor="#178a9e" font="Wireguard;40" halign="center" zPosition="2" transparent="1"/>
+	</screen>
+
+	<screen name="WireguardScreen" position="0,0" size="1920,1080" backgroundColor="#FF000000" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="380,7" size="1290,110" font="Wireguard;102" foregroundColor="#007fcfff" backgroundColor="#000000" transparent="1" zPosition="5"/>
+    <eLabel position="230,120" size="1450,3" backgroundColor="#303030" zPosition="4"/>
+    <ePixmap position="0,0" size="1700,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/main2.png" transparent="1" zPosition="-2"/>
+    <ePixmap position="1700,0" size="480,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/pC.png" transparent="1" zPosition="-1"/>
+    <eLabel position="230,960" size="1450,3" backgroundColor="#303030" zPosition="4"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_red,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_blue,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_green,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_yellow,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget name="logo_wireguard" position="230,30" size="420,75" alphatest="blend" transparent="1" zPosition="1"/>
+    <widget name="updateon"  position="1390,40" size="600,100" font="Wireguard;35" halign="center" valign="center" foregroundColor="red" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <eLabel text="Plugin Version" position="1350,75" size="250,40" font="Wireguard;30" backgroundColor="#000000" foregroundColor="#606060" halign="right" transparent="1" zPosition="1"/>
+    <widget name="Version" position="1580,75" size="100,40" backgroundColor="#000000" foregroundColor="#00f9c731" font="Wireguard;30" halign="right" zPosition="2" transparent="1"/>
+		<widget name="info_account" position="1075,35" size="600,40" backgroundColor="#000000" foregroundColor="#ffffff" font="Wireguard;28" halign="right" zPosition="2" transparent="1"/>
+    <widget name="logo"    position="1410,260" size="270,70" alphatest="blend" transparent="1" zPosition="2" scale="1" />
+    <eLabel position="230,135" size="1450,100" backgroundColor="#202020" />
+    <widget name="CheckKey"  position="240,135"  size="1240,100" backgroundColor="#000000" foregroundColor="#00f9c731"    font="Wireguard;28" halign="left"   valign="center" transparent="1" zPosition="2" />
+    <widget name="vpnLoad"   position="240,135"  size="1240,100" backgroundColor="#000000" foregroundColor="#007fcfff" font="Wireguard;32" halign="left"   valign="center" transparent="1" zPosition="2" />
+    <widget name="TotServer"     position="240,145" size="1140,40" backgroundColor="#000000" foregroundColor="#00f9c731"    font="Wireguard;36" halign="left"   valign="center" transparent="1" zPosition="2" />
+		<widget name="Page"     position="240,145" size="1140,40" backgroundColor="#000000" foregroundColor="#00f9c731"    font="Wireguard;36" halign="right"   valign="center" transparent="1" zPosition="2" />
+    <widget name="DateConnected" position="240,190" size="1140,34" halign="left" valign="center" backgroundColor="#202020" transparent="1" foregroundColor="#ffffff"  font="Wireguard;28" zPosition="2" />
+    <widget name="vpnInfo"   position="1370,145" size="300,40"   backgroundColor="#202020" foregroundColor="#ffffff"     font="Wireguard;30" halign="right"  valign="center" transparent="1" zPosition="2" />
+    <widget name="provLabel" position="1370,185" size="300,40"   backgroundColor="#202020" foregroundColor="#ffffff"     font="Wireguard;30" halign="right"  valign="center" transparent="1" zPosition="2" />
+    <eLabel position="230,242" size="1450,3" backgroundColor="#303030" zPosition="1"/>
+    <widget name="list" position="230,255" size="1160,630" font="Wireguard;28" itemHeight="45" foregroundColor="#ffffff" backgroundColor="#000000" foregroundColorSelected="#ffffff"
+      backgroundColorSelected="#001b3c85" scrollbarMode="showOnDemand" scrollbarForegroundColor="#007fcfff" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="1"/>
+    <widget name="flags"     position="230,910"  size="60,30"  alphatest="blend" transparent="1" zPosition="1" scale="1" />
+	  <widget name="vpnStatus" position="300,910"  size="200,40" font="Wireguard;29" halign="left"  foregroundColor="green"     backgroundColor="#000000" transparent="1" zPosition="2" />
+    <widget name="ip"        position="520,910"  size="380,40" font="Wireguard;29" halign="left"  foregroundColor="#007fcfff" backgroundColor="#000000" transparent="1" zPosition="2" />
+    <widget name="ping_text" position="940,910"  size="250,40" font="Wireguard;29" halign="left"  foregroundColor="#00f9c731"    backgroundColor="#000000" transparent="1" zPosition="2" />
+    <widget name="logoreceived" position="1270,905" size="40,40" alphatest="blend" transparent="1" zPosition="1"/>
+    <widget name="datareceived" position="1320,910" size="200,40" backgroundColor="#000000" foregroundColor="#007fcfff" font="Wireguard;27" halign="left" valign="center" zPosition="2" transparent="1"/>
+    <widget name="datasend"     position="1420,910" size="200,40" backgroundColor="#000000" foregroundColor="#00f9c731" font="Wireguard;27" halign="right" valign="center" zPosition="2" transparent="1"/>
+    <widget name="logosend"     position="1640,905" size="40,40" alphatest="blend" transparent="1" zPosition="1"/>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/key_menu.png" transparent="1" position="1600,980" size="80,35" alphatest="blend" scale="1" zPosition="10"/>
+    <widget name="menu" position="1390,979" size="0,0" backgroundColor="#000000" foregroundColor="#ffffff" font="Wireguard;28" halign="right" valign="center" zPosition="1" transparent="1"/>
+    <widget name="pluginupdate" position="1390,979" size="200,35" backgroundColor="#000000" foregroundColor="#ffffff" font="Wireguard;28" halign="right" valign="center" zPosition="1" transparent="1"/>
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/key_info.png" transparent="1" position="1600,1030" size="80,35" alphatest="blend" scale="1" zPosition="10"/>
+    <widget name="keyDns" position="1390,1029" size="0,0" backgroundColor="#000000" foregroundColor="#ffffff" font="Wireguard;30" halign="center" valign="center" zPosition="1" transparent="1"/>
+    <widget name="CheckDns" position="1390,1029" size="200,35" backgroundColor="#000000" foregroundColor="#ffffff" font="Wireguard;28" halign="right" valign="center" zPosition="1" transparent="1"/>
+    <widget name="logogreen" position="1364,800" size="0,0" alphatest="blend" transparent="1" zPosition="2"/>
+		<widget name="search" position="1400,345" size="292,95" alphatest="blend" transparent="1" zPosition="1"/>
+    <widget name="search_label" position="1495,345" size="200,95" backgroundColor="#000000" foregroundColor="#b0b0b0" font="Wireguard;30" halign="left" valign="center" zPosition="2" transparent="1"/>
+    <widget name="reset" position="1400,430" size="292,95" alphatest="blend" transparent="1" zPosition="1"/>
+    <widget name="reset_label" position="1495,430" size="200,95" backgroundColor="#000000" foregroundColor="#b0b0b0" font="Wireguard;30" halign="left" valign="center" zPosition="2" transparent="1"/>
+		<widget name="copy" position="1400,515" size="292,95" alphatest="blend" zPosition="1"/>
+    <widget name="copy_label" position="1495,515" size="200,95" backgroundColor="#000000" foregroundColor="#b0b0b0" font="Wireguard;30" halign="left" valign="center" zPosition="2" transparent="1"/>
+	</screen>
+
+	<screen name="WireguardSpeedtest" position="0,0" size="1920,1080" backgroundColor="#FF000000" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="380,7" size="1090,110" font="Wireguard;102" foregroundColor="#007fcfff" backgroundColor="#000000" transparent="1" zPosition="99"/>
+    <eLabel position="230,120" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <ePixmap position="0,0" size="1500,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/main2.png" transparent="1" zPosition="-2"/>
+    <ePixmap position="1500,0" size="420,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/pC.png" transparent="1" zPosition="-1"/>
+    <eLabel position="230,960" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_red,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_blue,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_green,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_yellow,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/lan.png" position="230,20" size="90,90" zPosition="2" scale="1" alphatest="blend" transparent="1">
+ 		  <convert type="WireRouteInfo">Lan</convert>
+ 		  <convert type="ConditionalShowHide" />
+ 	  </widget>
+ 	  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/wifi.png" position="230,20" size="90,90" zPosition="2" scale="1" alphatest="blend" transparent="1" >
+ 		  <convert type="WireRouteInfo">Wifi</convert>
+ 		  <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="720,30" size="730,50" halign="right" font="Wireguard;32" foregroundColor="#ffffff" backgroundColor="#000000" zPosition="3" transparent="1" >
+		  <convert type="WireRouteInfo">Vpn</convert>
+ 		  <convert type="ConditionalShowHide" />
+    </widget>
+		<widget name="ip"   position="340,50" size="850,200" font="Wireguard;36" foregroundColor="#ffffff" backgroundColor="#20000000" transparent="1" halign="left" zPosition="10" />
+		<eLabel position="230,140" size="1250,90" backgroundColor="#202020" />
+	    <widget name="data" position="230,145" size="1250,80" font="Wireguard;32" foregroundColor="#00f9c731" backgroundColor="#000000" transparent="1" halign="center" valign="center" zPosition="4" />
+ 	    <eLabel position="230,235" size="1250,3"  backgroundColor="#202020" />
+      <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookdown.png" transparent="1" position="360,260" size="181,150" alphatest="blend" />
+	    <widget name="download" position="300,420" size="300,60" font="Wireguard;40" foregroundColor="#51fff7" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+  	  <widget source="session.CurrentService" render="Label" position="300,485" size="300,60" font="Wireguard;40" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" halign="center"  zPosition="4">
+    		<convert type="WireNetSpeedInfo">RC</convert>
+  	  </widget>
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookup.png" transparent="1" position="1180,260" size="181,150" alphatest="blend" />
+			<widget name="upload" position="1120,420" size="300,60" font="Wireguard;40" foregroundColor="#dc87ff" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+	    <widget source="session.CurrentService" render="Label" position="1120,485" size="300,60" font="Wireguard;40" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" halign="center"  zPosition="4">
+    		<convert type="WireNetSpeedInfo">TM</convert>
+  	  </widget>
+			<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookping.png" transparent="1" position="790,290" size="110,70" alphatest="blend" scale="1" />
+	    <widget name="ping" position="790,370" size="110,40" font="Wireguard;28" foregroundColor="#00f9c731" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+ 	    <eLabel position="230,480" size="1250,60" backgroundColor="#202020" />
+ 	    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookla.png" transparent="1" position="400,590" size="910,300" alphatest="blend" />
+	    <widget name="host" position="230,910" size="1250,40" font="Wireguard;32" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+      <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/key_info.png" transparent="1" position="1400,980" size="80,40" alphatest="blend" scale="1" zPosition="10"/>
+	    <widget name="keyList" position="1200,980" size="000,00" zPosition="1" font="Wireguard;30" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" />
+	    <widget name="favServ" position="1190,978" size="200,40" zPosition="1" font="Wireguard;30" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" />
+	</screen>
+
+	<screen name="WireguardSpeedtestListServers" title="SpeedTest Selection Servers" position="0,0" size="1920,1080" backgroundColor="#FF000000" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="380,7" size="1067,110" font="Wireguard;102" foregroundColor="ltbluette" backgroundColor="#000000" transparent="1" zPosition="5"/>
+    <eLabel position="230,120" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <ePixmap position="0,0" size="1500,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/main2.png" transparent="1" zPosition="-2"/>
+    <ePixmap position="1500,0" size="420,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/pC.png" transparent="1" zPosition="-1"/>
+    <eLabel position="230,960" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+      <ePixmap objectTypes="key_red,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend"/>
+      <widget objectTypes="key_red,Label,Button" name="key_red" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+      <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+      <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend">
+          <convert type="ConditionalShowHide"/>
+      </widget>
+      <ePixmap objectTypes="key_blue,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend"/>
+      <widget objectTypes="key_blue,Label,Button" name="key_blue" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+      <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+      <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend">
+          <convert type="ConditionalShowHide"/>
+      </widget>
+      <ePixmap objectTypes="key_green,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend"/>
+      <widget objectTypes="key_green,Label,Button" name="key_green" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+      <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+      <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend">
+          <convert type="ConditionalShowHide"/>
+      </widget>
+      <ePixmap objectTypes="key_yellow,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend"/>
+      <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+      <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+	    <widget name="title" position="230,130" size="1250,50" font="Wireguard; 30" halign="left" valign="center" backgroundColor="#202020" transparent="0"/>
+	    <widget name="wait"	position="230,140" size="1250,50" zPosition="1" font="Wireguard;30" halign="center" valign="center" foregroundColor="#00f9c731" backgroundColor="#202020" />
+	    <widget name="introduction" position="230,140" size="1250,50" font="Wireguard;30" halign="center" valign="center" foregroundColor="#00f9c731" backgroundColor="#202020" />
+ 	    <eLabel position="230,195" size="1250,5" backgroundColor="#202020" />
+	    <widget name="list" position="230,205" size="1250,600" itemHeight="50" font="Wireguard;30" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="4" transparent="1" backgroundColorSelected="#001b3c85" foregroundColor="#FFFFFF" backgroundColor="#000000" />
+	</screen>
+
+	<screen name="WireguardSpeedtestshowresult" position="center,center" size="1040,570" backgroundColor="#FF000000" flags="wfNoBorder">
+ 	    <eLabel position="0,0" size="1040,570"   backgroundColor="#40000000" cornerRadius="25" />
+ 	    <eLabel position="20,20" size="1000,530" backgroundColor="#40000000" cornerRadius="25"  />
+	    <widget name="image" position="20,20" size="1000,533" zPosition="1" alphatest="blend" />
+	    <ePixmap position="950,520" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+	    <widget name="key_red" position="950,600" size="210,30" zPosition="1" font="Wireguard;26" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="#000000" transparent="1" />
+	</screen>
+
+	<screen name="WireguardSpeedtestListServersFav" position="0,0" size="1920,1080" backgroundColor="#FF000000" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="380,7" size="1090,110" font="Mmenu;102" foregroundColor="#007fcfff" backgroundColor="#000000" transparent="1" zPosition="99"/>
+    <eLabel position="230,120" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <ePixmap position="0,0" size="1500,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/main2.png" transparent="1" zPosition="-2"/>
+    <ePixmap position="1500,0" size="420,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/pC.png" transparent="1" zPosition="-1"/>
+    <eLabel position="230,960" size="1250,3" backgroundColor="#303030" zPosition="4"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_red,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_red.png" position="230,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="275,985" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_blue,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_blue.png" position="1010,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="645,1035" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_green,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_green.png" position="230,1035" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="275,1035" size="250,32" font="Wireguard;28" halign="left" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend">
+        <convert type="ConditionalShowHide"/>
+    </widget>
+    <ePixmap objectTypes="key_yellow,Button,Label" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/button_yellow.png" position="1010,985" size="30,30" zPosition="1" alphatest="blend"/>
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="1"/>
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="645,985" size="350,32" font="Wireguard;28" halign="right" valign="center" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" zPosition="2"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/lan.png" position="230,20" size="90,90" zPosition="2" scale="1" alphatest="blend" transparent="1">
+  		<convert type="WireRouteInfo">Lan</convert>
+  		<convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/wifi.png" position="230,20" size="90,90" zPosition="2" scale="1" alphatest="blend" transparent="1" >
+  		<convert type="WireRouteInfo">Wifi</convert>
+  		<convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="720,30" size="730,50" halign="right" font="Wireguard;32" foregroundColor="#ffffff" backgroundColor="#000000" zPosition="3" transparent="1" >
+  		<convert type="WireRouteInfo">Vpn</convert>
+  		<convert type="ConditionalShowHide" />
+    </widget>
+    <widget name="ip"   position="340,50" size="850,200" font="Wireguard;36" foregroundColor="#ffffff" backgroundColor="#20000000" transparent="1" halign="left" zPosition="10" />
+    <eLabel position="230,140" size="1250,90" backgroundColor="#202020" />
+    <widget name="data" position="230,145" size="1250,80" font="Wireguard;32" foregroundColor="#00f9c731" backgroundColor="#000000" transparent="1" halign="center" valign="center" zPosition="4" />
+    <eLabel position="230,235" size="1250,3"  backgroundColor="#202020" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookdown.png" transparent="1" position="360,260" size="181,150" alphatest="blend" />
+    <widget name="download" position="300,420" size="300,60" font="Wireguard;40" foregroundColor="#51fff7" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+    <widget source="session.CurrentService" render="Label" position="300,485" size="300,60" font="Wireguard;40" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" halign="center"  zPosition="4">
+      <convert type="WireNetSpeedInfo">RC</convert>
+    </widget>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookup.png" transparent="1" position="1180,260" size="181,150" alphatest="blend" />
+      <widget name="upload" position="1120,420" size="300,60" font="Wireguard;40" foregroundColor="#dc87ff" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+    <widget source="session.CurrentService" render="Label" position="1120,485" size="300,60" font="Wireguard;40" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" halign="center"  zPosition="4">
+      <convert type="WireNetSpeedInfo">TM</convert>
+    </widget>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookping.png" transparent="1" position="790,290" size="110,70" alphatest="blend" scale="1" />
+    <widget name="ping" position="790,370" size="110,40" font="Wireguard;28" foregroundColor="#00f9c731" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+    <eLabel position="230,480" size="1250,60" backgroundColor="#202020" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/ookla.png" transparent="1" position="400,590" size="910,300" alphatest="blend" />
+    <widget name="host" position="230,910" size="1250,40" font="Wireguard;32" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" halign="center" zPosition="4" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Wireguard/skin/fhd/buttons/key_info.png" transparent="1" position="1400,980" size="80,40" alphatest="blend" scale="1" zPosition="10"/>
+    <widget name="keyList" position="1200,980" size="000,00" zPosition="1" font="Wireguard;30" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" />
+    <widget name="favServ" position="1190,978" size="200,40" zPosition="1" font="Wireguard;30" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" />
+	</screen>
+</skin>
